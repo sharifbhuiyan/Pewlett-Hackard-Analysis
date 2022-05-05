@@ -1,5 +1,4 @@
-# Pewlett-Hackard-Analysis
-## **<h1 align="center"> PyBer_Analysis**
+## **<h1 Pewlett-Hackard-Analysis**
 
 
 
