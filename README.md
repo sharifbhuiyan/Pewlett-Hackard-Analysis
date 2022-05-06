@@ -47,10 +47,10 @@ Command is used for Pivot table to get the total fares for each type of city by 
 --Create a Unique Titles table that hold the most recent title of each employee.( Exclude retired). 
 -- Use Dictinct with Orderby to remove duplicate rows
   
-SELECT DISTINCT ON 	(emp_no) emp_no,
-					first_name,
-					last_name,
-					title
+SELECT DISTINCT ON (emp_no) emp_no,
+		first_name,
+		last_name,
+		title
 INTO unique_titles
 FROM retirement_titles
 WHERE to_date ='9999-01-01'
@@ -110,8 +110,7 @@ Command is used for Pivot table to get the total fares for each type of city by 
 ```      
 
 
-
-  
+ 
     
     
     
@@ -141,6 +140,7 @@ ORDEr BY count DESC;
   Image : 
   
   
+If we combined the previous and new query and put info in a table. we can figured it out easily. Below table shows the full scenireo.	
   
   <p align="center">
 
