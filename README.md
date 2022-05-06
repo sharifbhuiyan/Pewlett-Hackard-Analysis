@@ -25,15 +25,15 @@
   
 - <p align="justify"> A table named ‘retirement_titles’ has been created filtering on the birth date who were born between 1952 and 1955. This table holds the list of employee’s status both existing and already retired.<p>
   
-  Image
+  Retirement Title Table :
 
   
 <p align="center">
   <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
 </p>
 
-Command is used for Pivot table to get the total fares for each type of city by the date. 
-
+code:
+	
 ```ruby
  
 
@@ -41,7 +41,9 @@ Command is used for Pivot table to get the total fares for each type of city by 
   
 - <p align="justify"> In ‘retirement_titles’ table, there are duplicate entries for some employees because of switched titles over the years. To remove these duplicates and keep only the most recent title of each employee, a unique_titles table has been created. This table holds the list of the most recent title of each employee who are not retired. A Distinct ON statement has been applied to remove duplicate employees filtering on ‘9999-01-01’.   
 <p>
-  
+
+Unique Title Table :
+
 ```ruby
   
 --Create a Unique Titles table that hold the most recent title of each employee.( Exclude retired). 
@@ -71,14 +73,13 @@ Command is used for Pivot table to get the total fares for each type of city by 
 
 ```  
 
-  
- - <p align="justify">•	
+
     
 - <p align="justify"> A retiring_titles table has been created that showing the Number of Retiring Employees by most recent Title. From this table, we could know that total number of retiring employees is 72458.   
 <p>
   
   Code :
-
+Retiring Title Table :
   
 <p align="center">
   <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
@@ -96,7 +97,7 @@ Command is used for Pivot table to get the total fares for each type of city by 
 <p>
   
   Code :
-
+Mentorship eligibility Table :
   
 <p align="center">
   <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
