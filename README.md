@@ -3,7 +3,7 @@
 
 
   ## Overview of the Analysis: 
-<p align="justify">This project is for to notify the company about employee’s turnover, impact of large number of employees’ retirement and also taken mentorship steps for new employees to cope up with upcoming silver tsunami. So, getting the total scenario of the company, few things has to be analysis : determine the number of retiring employees per title, identify employees who are eligible to participate in a mentorship program. After completed the analysis, got a details of the employees about total existing employee is 240124, retiring employees 72458 and mentorship required employee 1549.<p>
+<p align="justify">This project is for to notify the company about employee’s turnover, impact of large number of employees’ retirement and also taken mentorship steps for new employees to cope up with upcoming silver tsunami. So, getting the total scenario of the company, few things has to be analysis : determine the number of retiring employees per title, identify employees who are eligible to participate in a mentorship program. After completed the analysis, we got a summary details of the employees about total existing employee is 240124, retiring employees 72458 and mentorship required employee 1549.<p>
 
 <p align="justify">The project consists of two technical analysis.<p>
 
@@ -23,7 +23,7 @@
   
  ## Pewlett-Hackard-Analysis Results: 
   
-- <p align="justify"> A table named ‘retirement_titles’ has been created filtering on the birth date who were born between 1952 and 1955. This table holds the list of employee’s status both existing and already retired.<p>
+- <p align="justify"> A table named ‘retirement_titles’ has been created filtering on the birth date who were born between 1952 and 1955. This table holds the list of employee’s status both existing and retired.<p>
   
   Retirement Title Table :
 
@@ -32,24 +32,21 @@
   <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
 </p>
 
-code:
-	
-```ruby
- 
 
-```  
+	
   
 - <p align="justify"> In ‘retirement_titles’ table, there are duplicate entries for some employees because of switched titles over the years. To remove these duplicates and keep only the most recent title of each employee, a unique_titles table has been created. This table holds the list of the most recent title of each employee who are not retired. A Distinct ON statement has been applied to remove duplicate employees filtering on ‘9999-01-01’.   
 <p>
 
-Unique Title Table :
+Statement for Unique Title Table :
 
-```ruby
+```sharif
   
 --Create a Unique Titles table that hold the most recent title of each employee.( Exclude retired). 
 -- Use Dictinct with Orderby to remove duplicate rows
   
-SELECT DISTINCT ON (emp_no) emp_no,
+SELECT DISTINCT ON (emp_no) 
+		emp_no,
 		first_name,
 		last_name,
 		title
@@ -57,15 +54,9 @@ INTO unique_titles
 FROM retirement_titles
 WHERE to_date ='9999-01-01'
 ORDER BY emp_no, to_date DESC;
--- Check the table
-SELECT count(emp_no) FROM unique_titles;
-  
+ 
 ```  
   
-<p align="center">
-  <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
-</p>
-
 
     
 - <p align="justify"> A retiring_titles table has been created that showing the Number of Retiring Employees by most recent Title. From this table, we could know that total number of retiring employees is 72458.   
