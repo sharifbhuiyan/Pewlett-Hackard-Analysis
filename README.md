@@ -3,16 +3,16 @@
 
 
 
-  ## Overview of the PyBer_Analysis: 
-<p align="justify">The analysis shows how the data differs by city type and how those differences can be used by decision-makers at PyBer. A summary DataFrame of the ride-sharing data has been created by city type. This dataframe shows the weekly fare by city type.  Then, using Pandas and Matplotlib, a multiple-line graph has been created that shows the total weekly fares for each city type. <p>
+  ## Overview of the Analysis: 
+<p align="justify">This project is for to notify the company about employee’s turnover, impact of large number of employees’ retirement and also taken mentorship steps for new employees to cope up with upcoming silver tsunami. So, getting the total scenario of the company, few things has to be analysis : determine the number of retiring employees per title, identify employees who are eligible to participate in a mentorship program. After completed the analysis, got a details of the employees about total existing employee is 240124, retiring employees 72458 and mentorship required employee 1549.<p>
 
-<p align="justify">This analysis consists of two technical analysis.<p>
+<p align="justify">The project consists of two technical analysis.<p>
 
-  - A ride-sharing summary DataFrame by city type
-  - A multiple-line chart of total fares for each city type
+  - Publish the Number of Retiring Employees by Title
+  - List of the Employees Eligible for the Mentorship Program
 
  
-  PyBer Analysis ipynb file link -  [ PyBer Analysis](https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/PyBer_Challenge.ipynb)  
+  Pewlett-Hackard-Analysis .sql file link -  [ PyBer Analysis](https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/PyBer_Challenge.ipynb)  
 
   
 - Resources :
