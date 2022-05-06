@@ -111,7 +111,7 @@ ORDEr BY count DESC;
 
 ```  
  
-<p align="justify"> And query result is as the following snapshot about mentorship employees. </p>
+<p align="justify"> The query result is as the following snapshot about mentorship employees. </p>
   
   Image : 
   
