@@ -140,7 +140,7 @@ ORDEr BY count DESC;
   Image : 
   
   
-If we combined the previous and new query and put info in a table. we can figured it out easily. Below table shows the full scenireo.	
+If we compare the retiring_title count with mentorship group count and formed a tabular view, we can observed the outcome. 	
   
   <p align="center">
 
