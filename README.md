@@ -1,4 +1,5 @@
-## **<h1 Pewlett-Hackard-Analysis**
+## **<h1 align="center"> Pewlett-Hackard-Analysis**
+
 
 
   ## Overview of the Analysis: 
@@ -109,33 +110,39 @@ Command is used for Pivot table to get the total fares for each type of city by 
 - <p align="justify"> Hire retirees for part time basis so that they can train up those who need mentorship.</p>
 
 
-<p align="justify"> There are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. The following snapshot is the detail about mentorship employees.</p>
+<p align="justify"> There are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. We can create one more table “employees_title’ with emp_no, birth_date, title, from_date, to_date columns filtered by to_date = ‘9999-01-01’ which showing only existing all employees. From that table we can count the member of mentorship group according to their title. The query statement is as below :</p>
 
   
+```ruby
+Select count(title), title from employees_titles
+WHERE birth_date BETWEEN '1965-01-01' and '1965-12-31'
+GROUP BY title
+ORDEr BY count DESC;
+
+```  
  
-<p align="center">
-   
-|city type  |Total Fare | 
-| :-------- |:---------:|
-| Urban     | $37,066   |
-| Suburban  | $17,883   |
-| Rural     | $3,914    |
+<p align="justify"> And query result is as the following snapshot about mentorship employees. </p>
+  
+  Image : 
+  
+  
+  
+  <p align="center">
+
+
+|Title                |mentorship member employees  |retiring_employees|
+| :--------           |:---------:                  | --------: | 
+| Senior Staff        | 569                       | 24926     | 
+| Senior Engineer     | 529                       | 25916  | 
+| Engineer            | 190                       | 9285     | 
+| Staff               | 155                       | 7636     | 
+| Technique Leader    | 77                        | 3603     | 
+| Assistant Engineer  | 29                        | 1090     | 
 
 </p>
   
 
-- The total highest ride fare shows in march.  
-  <p align="center">
-   
-|Month  |Total Fare of all city type | 
-| :---- |:----------:|
-| Jan   | $12,770.00 |
-| Feb   | $14,390.00 |
-| Mar   | $16,934.00 |
-| Apr   | $14,770.00 |
-
-</p>
-
+ 
 
 <p align="justify"> If we focus on the above table, the total number of  employees need mentorship is 1549 where  senior staff is 569. Against them we have  24926 retiring senior staff, who can train them up. Number of Senior Engineer who need mentorship is 529. And we have 25916 retiring senior engineer to train them up. </p>
 
