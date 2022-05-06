@@ -66,13 +66,6 @@ SELECT count(emp_no) FROM unique_titles;
   <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
 </p>
 
-Command is used for Pivot table to get the total fares for each type of city by the date. 
-
-```ruby
-  
-
-```  
-
 
     
 - <p align="justify"> A retiring_titles table has been created that showing the Number of Retiring Employees by most recent Title. From this table, we could know that total number of retiring employees is 72458.   
@@ -85,10 +78,9 @@ Retiring Title Table :
   <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
 </p>
 
-Command is used for Pivot table to get the total fares for each type of city by the date. 
 
 ```ruby
-  
+code  
 
 ```      
 
@@ -96,20 +88,18 @@ Command is used for Pivot table to get the total fares for each type of city by 
 - <p align="justify"> A mentorship-eligibility table has been created that holds the current employees who were born between January 1, 1965 and December 31, 1965. The table shows that the total number of employees  required mentorship is 1549.
 <p>
   
-  Code :
-Mentorship eligibility Table :
+ 
   
-<p align="center">
-  <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
-</p>
-
-Command is used for Pivot table to get the total fares for each type of city by the date. 
-
 ```ruby
-  
+  Code : 
 
 ```      
+Mentorship eligibility Table :
 
+	
+<p align="center">
+<img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
+</p>
 
  
     
