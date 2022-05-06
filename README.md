@@ -42,8 +42,23 @@ Command is used for Pivot table to get the total fares for each type of city by 
 - <p align="justify"> In ‘retirement_titles’ table, there are duplicate entries for some employees because of switched titles over the years. To remove these duplicates and keep only the most recent title of each employee, a unique_titles table has been created. This table holds the list of the most recent title of each employee who are not retired. A Distinct ON statement has been applied to remove duplicate employees filtering on ‘9999-01-01’.   
 <p>
   
-  Code :
-
+```ruby
+  
+--Create a Unique Titles table that hold the most recent title of each employee.( Exclude retired). 
+-- Use Dictinct with Orderby to remove duplicate rows
+  
+SELECT DISTINCT ON 	(emp_no) emp_no,
+					first_name,
+					last_name,
+					title
+INTO unique_titles
+FROM retirement_titles
+WHERE to_date ='9999-01-01'
+ORDER BY emp_no, to_date DESC;
+-- Check the table
+SELECT count(emp_no) FROM unique_titles;
+  
+```  
   
 <p align="center">
   <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
@@ -130,7 +145,7 @@ ORDEr BY count DESC;
   <p align="center">
 
 
-|Title                |mentorship member employees  |retiring_employees|
+|Title                |Member of mentorship group  |Retiring Employees|
 | :--------           |:---------:                  | --------: | 
 | Senior Staff        | 569                       | 24926     | 
 | Senior Engineer     | 529                       | 25916  | 
