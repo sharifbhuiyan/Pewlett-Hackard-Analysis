@@ -25,7 +25,7 @@
   
 - <p align="justify"> A table named ‘retirement_titles’ has been created filtering on the birth date who were born between 1952 and 1955. This table holds the list of employee’s status both existing and retired.<p>
   
-  Retirement Title Table :
+  Retirement Title Table looks like :
 
   
 <p align="center">
@@ -62,7 +62,7 @@ ORDER BY emp_no, to_date DESC;
 <p>
   
 
-Retiring Title Table :
+Retiring Title Table looks like:
   
 <p align="center">
   <img width="300" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/retiring_titles.png
@@ -75,11 +75,8 @@ Retiring Title Table :
   
  
   
-```sharif
-  Code : 
-
-```      
-Mentorship eligibility Table :
+  
+Mentorship eligibility Table looks like :
 
 	
 <p align="center">
@@ -100,7 +97,7 @@ Mentorship eligibility Table :
 - <p align="justify"> Hire retirees for part time basis so that they can train up those who need mentorship.</p>
 
 
-<p align="justify"> There are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. We can execute a query which from which we can count the member of mentorship group according to their recent title. The query statement is as below :</p>
+<p align="justify"> There are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. By executing a query, we can show the member of mentorship group according to their recent title.</p>
 
   
 ```sharif
@@ -116,10 +113,10 @@ ORDER BY COUNT DESC ;
 
 ```  
  
-<p align="justify"> The query result is as the following snapshot about mentorship employees. </p>
+<p align="justify"> The query result of mentorship employees looks like:</p>
   
-  mentorship employees Table :
-  <p align="center">
+   
+ <p align="center">
 <img width="300" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/mentorship_count.png
 </p>
   
