@@ -104,10 +104,15 @@ Mentorship eligibility Table :
 
   
 ```sharif
-Select count(title), title from employees_titles
-WHERE birth_date BETWEEN '1965-01-01' and '1965-12-31'
-GROUP BY title
-ORDEr BY count DESC;
+-- ddddddddddddddddddCreate a table named retirement_titles of the employees who were born between 1952 and 1955. 
+SELECT 	COUNT(ti.title),
+		ti.title
+FROM employees as e
+INNER JOIN titles as ti
+ON (e.emp_no=ti.emp_no)
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31') and ti.to_date ='9999-01-01'
+GROUP BY ti.title
+ORDER BY COUNT DESC ;
 
 ```  
  
