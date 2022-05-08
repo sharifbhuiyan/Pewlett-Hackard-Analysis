@@ -29,7 +29,7 @@
 
   
 <p align="center">
-  <img width="500" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/retirement_titles.png
+  <img width="600" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/retirement_titles.png
 </p>
 	
 
@@ -65,7 +65,7 @@ ORDER BY emp_no, to_date DESC;
 Retiring Title Table :
   
 <p align="center">
-  <img width="500" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/retiring_titles.png
+  <img width="300" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/retiring_titles.png
 </p>
 
 
@@ -83,7 +83,7 @@ Mentorship eligibility Table :
 
 	
 <p align="center">
-<img width="500" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/mentorship_eligibilty.png
+<img width="600" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/mentorship_eligibilty.png
 </p>
 
  
@@ -120,7 +120,7 @@ ORDER BY COUNT DESC ;
   
   mentorship employees Table :
   <p align="center">
-<img width="500" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/mentorship_count.png
+<img width="300" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/mentorship_count.png
 </p>
   
 If we form a tabular view for the retiring_title count and mentorship group count by their title, we can observe the outcome clearly. 	
