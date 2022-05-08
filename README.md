@@ -11,7 +11,7 @@
   - List of the employees eligible for the mentorship program
 
  
-  Pewlett-Hackard-Analysis .sql file link -  [ Pewlett-Hackard-Analysis](https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/PyBer_Challenge.ipynb)  
+  Pewlett-Hackard-Analysis .sql file link -  [ Pewlett-Hackard-Analysis](https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/tree/main/Queries)  
 
   
 - Resources :
@@ -29,9 +29,9 @@
 
   
 <p align="center">
-  <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
+  <img width="500" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/retirement_titles.png
 </p>
-
+	
 
 	
   
@@ -65,7 +65,7 @@ ORDER BY emp_no, to_date DESC;
 Retiring Title Table :
   
 <p align="center">
-  <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
+  <img width="500" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/retiring_titles.png
 </p>
 
 
@@ -83,7 +83,7 @@ Mentorship eligibility Table :
 
 	
 <p align="center">
-<img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
+<img width="500" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/mentorship_eligibilty.png
 </p>
 
  
@@ -118,8 +118,10 @@ ORDER BY COUNT DESC ;
  
 <p align="justify"> The query result is as the following snapshot about mentorship employees. </p>
   
-  Image : 
-  
+  mentorship employees Table :
+  <p align="center">
+<img width="500" src=https://github.com/sharifbhuiyan/Pewlett-Hackard-Analysis/blob/main/resources/mentorship_count.png
+</p>
   
 If we form a tabular view for the retiring_title count and mentorship group count by their title, we can observe the outcome clearly. 	
   
