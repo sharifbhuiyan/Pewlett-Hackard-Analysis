@@ -100,17 +100,17 @@ Mentorship eligibility Table :
 - <p align="justify"> Hire retirees for part time basis so that they can train up those who need mentorship.</p>
 
 
-<p align="justify"> There are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. We can create one more table “employees_title’ with emp_no, birth_date, title, from_date, to_date columns filtered by to_date = ‘9999-01-01’ which showing only existing all employees. From that table we can count the member of mentorship group according to their title. The query statement is as below :</p>
+<p align="justify"> There are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. We can execute a query which from which we can count the member of mentorship group according to their recent title. The query statement is as below :</p>
 
   
 ```sharif
--- ddddddddddddddddddCreate a table named retirement_titles of the employees who were born between 1952 and 1955. 
+-- Statement for showing the Number of mentorship required employees by most recent Title.
 SELECT 	COUNT(ti.title),
 		ti.title
 FROM employees as e
 INNER JOIN titles as ti
 ON (e.emp_no=ti.emp_no)
-WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31') and ti.to_date ='9999-01-01'
+WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31') and ti.to_date ='9999-01-01'
 GROUP BY ti.title
 ORDER BY COUNT DESC ;
 
